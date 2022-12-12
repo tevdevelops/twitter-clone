@@ -30,6 +30,14 @@
 
       <SidebarLeftTab>
         <template v-slot:icon>
+          <BellIcon />
+        </template>
+
+        <template v-slot:name> Notifications </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab>
+        <template v-slot:icon>
           <InboxIcon />
         </template>
 
@@ -72,8 +80,9 @@
 </template>
 
 <script setup>
+import { HomeIcon } from '@heroicons/vue/20/solid'
+
 import {
-  HomeIcon,
   HashtagIcon,
   BellIcon,
   InboxIcon,
@@ -81,7 +90,7 @@ import {
   DocumentTextIcon,
   UserIcon,
   EllipsisHorizontalCircleIcon,
-} from '@heroicons/vue/20/solid'
+} from '@heroicons/vue/24/outline'
 
 const { defaultTransition } = useTailwindConfig()
 </script>
